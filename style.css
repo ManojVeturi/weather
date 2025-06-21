@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: arial, Helvetica, sans-serif;
+}
+body{
+    display:grid;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: #95a9b0;
+}
+
+.container{
+    height: 20rem;
+    width: 15rem;
+    background-color: rgba(47, 46, 34, 0.84);
+    padding: 40px 50px;
+    display: flex;
+    flex-direction:column;
+    text-align: center;   
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    backdrop-filter: blur(10px);
+}
+
+.search{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    border: none;
+    margin-right: 5px;
+    margin-bottom:10px;
+    top: 5%;
+}
+
+.search input{
+    padding-top:10px;
+    width: 8rem;
+    height: 1.5rem;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    border: none;
+    padding: 10px 25px;
+    font-size: 15px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 15px;
+}
+
+.search button{
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #026682;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+}
+
+.title{
+    font-size: 3rem;
+    color: aquamarine;
+    font-family: cursive;
+    margin-top: 50px;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    gap: 2rem;
+}
+
+.weather h1{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #fdfcfc;
+    font-family: monospace;
+}
+
+.weather h2{
+    font-size: 1rem;
+    color: #fdfcfc;
+    font-family: cursive;
+}
+
+.humidity h1{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #fdfcfc;
+    font-family: monospace;
+}
+
+.humidity h2{
+    font-size: 1rem;
+    color: #fdfcfc;
+    font-family: cursive;
+}
+
+.wind h1{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #fdfcfc;
+    font-family: monospace;
+}
+
+.wind h2{
+    font-size: 1rem;
+    color: #fdfcfc;
+    font-family: cursive;
+}
+
+@media (max-width: 760px) {
+    .container{
+        padding: 0 3rem;
+        width: 8rem;
+    }
+    .search button{
+        width: 30px;
+        height: 30px;
+    }
+    .title{
+        font-size: 2rem;
+    }
+    .weather h1, .humidity h1, .wind h1{
+        font-size: 1.2rem;
+    }
+}
